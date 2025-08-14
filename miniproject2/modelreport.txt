@@ -1,0 +1,11 @@
+Accuracy: 89.2%
+
+Sentiment	F1-Score	Precision	Recall
+Neutral	      0.92     	0.91    	0.94
+Positive	  0.78	    0.82	    0.75
+Negative	  0.65	    0.70	    0.60
+
+Observations:
+1. The model achieves its highest reliability with neutral reviews.
+2. Positive reviews are classified reasonably well.
+3. Negative reviews present the most difficulty due to limited examples and class imbalance.
