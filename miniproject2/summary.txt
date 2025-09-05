@@ -1,0 +1,35 @@
+Data Preprocessing:
+Cleaning raw text (removing URLs, punctuation, stop characters).
+Expanding very short reviews with heuristic rules.
+Tokenization, vocabulary building, padding.
+Heuristic sentiment labeling (positive, negative, neutral).
+
+
+Exploratory Data Analysis (EDA):
+Distribution of review lengths (words & characters).
+Sentiment distribution (pie chart).
+Word clouds for positive, negative, and neutral reviews.
+
+
+Model Architectures:
+SimpleNN: Embedding + Flatten + Fully Connected.
+LSTM: Standard LSTM with dropout.
+BiLSTM: Bidirectional LSTM with advanced dropout, noise injection, and batch normalization.
+
+
+Training & Evaluation:
+Train/Validation/Test split.
+Accuracy and loss monitoring across epochs.
+Comparison of models (plots for loss & accuracy).
+
+
+Model Saving & Reloading:
+All models and preprocesing objects (vocab, label encoder) are saved in ./saved_models.
+Models are reloaded safely (torch.serialization.add_safe_globals).
+
+
+Final Results:
+Evaluated on a held-out Test Set.
+Classification report (Precision, Recall, F1-Score).
+Comparison of Validation Accuracy vs Test Accuracy.
+Best performing model is automatically selected.

@@ -1,0 +1,59 @@
+ Loaded simple_nn_model.pth | Best Val Acc: 0.9618
+ Loaded lstm_model.pth | Best Val Acc: 0.8866
+ Loaded bilstm_model.pth | Best Val Acc: 0.9630
+
+Simple NN Test Results:
+  Test Accuracy: 0.9704 (97.04%)
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     neutral     0.9767    0.9903    0.9834       719
+    positive     0.9146    0.8152    0.8621        92
+
+    accuracy                         0.9704       811
+   macro avg     0.9457    0.9027    0.9227       811
+weighted avg     0.9696    0.9704    0.9697       811
+
+
+LSTM Test Results:
+  Test Accuracy: 0.8866 (88.66%)
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     neutral     0.8866    1.0000    0.9399       719
+    positive     0.0000    0.0000    0.0000        92
+
+    accuracy                         0.8866       811
+   macro avg     0.4433    0.5000    0.4699       811
+weighted avg     0.7860    0.8866    0.8333       811
+
+c:\Users\lavz1\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+c:\Users\lavz1\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+c:\Users\lavz1\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+BiLSTM Test Results:
+  Test Accuracy: 0.9655 (96.55%)
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     neutral     0.9846    0.9764    0.9804       719
+    positive     0.8265    0.8804    0.8526        92
+
+    accuracy                         0.9655       811
+   macro avg     0.9056    0.9284    0.9165       811
+weighted avg     0.9666    0.9655    0.9659       811
+
+
+Validation vs Test Accuracy (best Val vs Test):
+Simple NN     Val: 0.9618  |  Test: 0.9704
+LSTM          Val: 0.8866  |  Test: 0.8866
+BiLSTM        Val: 0.9630  |  Test: 0.9655
+
+ Best Model (by Test Accuracy): Simple NN
+Test Accuracy: 0.9704 (97.04%)
